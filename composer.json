@@ -1,0 +1,21 @@
+{
+    "name": "andrey-mokhov/anelegan-db",
+    "description": "migration for zend framework",
+    "license": "MIT",
+    "keywords": [
+        "anelegan",
+        "zf2",
+        "db"
+    ],
+    "homepage": "https://github.com/andrey-mokhov/anelegan-db",
+    "autoload": {
+        "psr-4": {
+            "Anelegan\\Db\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "zendframework/zf2": "^2.7"
+    },
+    "minimum-stability": "dev",
+}
