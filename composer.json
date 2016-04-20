@@ -5,7 +5,7 @@
     "keywords": [
         "anelegan",
         "zf2",
-        "db"
+        "zend-db"
     ],
     "homepage": "https://github.com/andrey-mokhov/anelegan-db",
     "autoload": {
@@ -15,7 +15,7 @@
     },
     "require": {
         "php": "^5.5 || ^7.0",
-        "zendframework/zf2": "^2.7"
+        "zendframework/zf2": "^2.5"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "dev"
 }
