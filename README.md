@@ -2,7 +2,7 @@ Migration for Zend Framework
 ============================
 This package allows you to organize DB migration for solutions based on ZF2.
 
-Sorry for my English. The Russian-language documentation can be found at the [following link](./ru/README.md).
+Sorry for my English. The Russian-language documentation can be found at the [following link](docs/ru/README.md).
 
 # Installation using Composer
 Installation package by command:
