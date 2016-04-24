@@ -34,21 +34,21 @@ final class InitMigration extends AbstractMigration
 
     /**
      * @param SqlInterface $query
-     * @return string
+     * @return void
      */
     public function execute(SqlInterface $query)
     {
         $platform = new Platform($this->adapter);
         $platform->setSubject($query);
         if (defined('ANELEGAN_DB_DEBUG') && ANELEGAN_DB_DEBUG) {
-            $this->console->write(PHP_EOL . $platform->getSqlString($this->adapter->getPlatform()) . PHP_EOL);
+            $this->console->writeLine(PHP_EOL . $platform->getSqlString($this->adapter->getPlatform()) . PHP_EOL);
         } else {
             $this->adapter->query($platform->getSqlString(), Adapter::QUERY_MODE_EXECUTE);
         }
     }
 
     /**
-     * @return string
+     * @return bool
      */
     public function safeUp()
     {
@@ -76,5 +76,6 @@ final class InitMigration extends AbstractMigration
                 ->addConstraint(new ForeignKey($this->dependTableName . '_parent_id_fk', 'parent_id', $this->tableName, 'id', 'RESTRICT', 'CASCADE'))
                 ->addConstraint(new PrimaryKey(['child_id', 'parent_id'], $this->dependTableName . '_child_id_parent_id_pk'))
         );
+        return true;
     }
 }

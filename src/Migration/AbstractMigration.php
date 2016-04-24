@@ -49,7 +49,7 @@ abstract class AbstractMigration implements MigrationInterface
 
     /**
      * @param ConsoleAdapter $console
-     * @return self
+     * @return static
      */
     public function setConsole(ConsoleAdapter $console)
     {
@@ -59,23 +59,23 @@ abstract class AbstractMigration implements MigrationInterface
     }
 
     /**
-     * @return string
+     * @return bool
      */
     protected function safeUp()
     {
-        return '';
+        return true;
     }
 
     /**
-     * @return string
+     * @return bool
      */
     protected function safeDown()
     {
-        return '';
+        return true;
     }
 
     /**
-     * @return string
+     * @return bool
      */
     public function setUp()
     {
@@ -98,7 +98,7 @@ abstract class AbstractMigration implements MigrationInterface
     }
 
     /**
-     * @return string
+     * @return bool
      */
     public function tearDown()
     {
@@ -121,7 +121,7 @@ abstract class AbstractMigration implements MigrationInterface
 
     /**
      * @param SqlInterface $query
-     * @return string
+     * @return void
      */
     public function execute(SqlInterface $query)
     {

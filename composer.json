@@ -3,9 +3,10 @@
     "description": "migration for zend framework",
     "license": "MIT",
     "keywords": [
-        "anelegan",
+        "migration",
         "zf2",
-        "zend-db"
+        "zend-db",
+        "anelegan"
     ],
     "homepage": "https://github.com/andrey-mokhov/anelegan-db",
     "autoload": {

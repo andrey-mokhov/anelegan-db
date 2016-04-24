@@ -24,12 +24,12 @@ interface MigrationInterface
     public function getName();
 
     /**
-     * @return string
+     * @return bool
      */
     public function setUp();
 
     /**
-     * @return string
+     * @return bool
      */
     public function tearDown();
 }
