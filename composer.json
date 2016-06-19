@@ -19,7 +19,7 @@
         "zendframework/zend-db": "^2.5",
         "container-interop/container-interop": "~1.0",
         "zendframework/zend-console": "^2.5",
-        "zendframework/zend-mvc": "^2.5",
+        "zendframework/zend-mvc": "^2.5 || ^3.0",
         "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
     },
     "minimum-stability": "dev"
